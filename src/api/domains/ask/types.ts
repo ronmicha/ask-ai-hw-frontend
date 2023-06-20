@@ -2,7 +2,7 @@ export type GetAnswersPayload = {
   question: string;
 };
 
-type Chunk = {
+export type Chunk = {
   confidence: number;
   content: string;
 };

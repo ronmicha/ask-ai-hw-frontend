@@ -11,8 +11,8 @@ export const Search = ({ onSearchClick }: SearchProps) => {
     setValue(event.target.value);
   };
 
-  const handleClick = async () => {
-    await onSearchClick(value);
+  const handleClick = (): void => {
+    void onSearchClick(value);
   };
 
   return (
